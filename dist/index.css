@@ -1,0 +1,98 @@
+/* CSS Next
+ * <https://github.com/cssnext/cssnext>
+ * Available features
+ *   - customProperties
+ *   - calc
+ *   - customMedia
+ *   - mediaQueriesRange
+ *   - customSelectors
+ *   - colorFunction
+ *   - colorHexAlpha
+ *   - colorHwb
+ *   - colorRebeccapurple
+ *   - fontVariant
+ *   - filter
+ *   - rem
+ *   - pseudoElements
+ *   - colorRgba
+ *   - autoprefixer
+ */
+
+ /* customProperties  and calc */
+
+body {
+  font-size: 16px;
+  color: rgb(102, 51, 153);
+}
+
+h1 {
+  font-size: 32px;
+  height: calc(100px - 2em);
+}
+
+
+/* Custom Media Queries */
+
+@media (max-width: 30em) {
+  /* styles for small viewport */
+}
+
+/* Media ranges */
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+  .bar {
+    display: block;
+  }
+}
+
+/* Custom Selectors */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { /* styles for all headings */ }
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p { /* more styles */ }
+
+/*
+:  to customise a class.
+:: to customise a Pseudo-element.
+*/
+@custom-selector-links :--any-link :link, :visited;
+
+a:--any-link {
+  color: rgb(127, 64, 191); /* colors */
+}
+
+.gray {
+  color: #646464;
+  color: rgba(100, 100, 100, 0.5);
+  /* output: color: rgba(100, 100, 100, 0.5); */
+}
+
+/*font variants */
+h2 {
+  -webkit-font-feature-settings: "c2sc";
+     -moz-font-feature-settings: "c2sc";
+          font-feature-settings: "c2sc";
+  font-variant-caps: small-caps;
+  /* output:
+    font-feature-settings: "c2sc";
+    font-variant-caps: small-caps;
+   */
+}
+
+.blur {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="4" /></filter></svg>#filter');
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  /*output:
+    filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="4" /></filter></svg>#filter');
+    filter: blur(4px);
+  */
+}
