@@ -17,3 +17,74 @@
  *   - colorRgba
  *   - autoprefixer
  */
+
+ /* customProperties  and calc */
+
+ :root {
+  --color: rebeccapurple;
+  --main-font-size: 16px;
+}
+
+body {
+  font-size: var(--main-font-size);
+  color: var(--color);
+}
+
+h1 {
+  font-size: calc(var(--main-font-size) * 2);
+  height: calc(100px - 2em);
+}
+
+
+/* Custom Media Queries */
+
+@custom-media --small-viewport (max-width: 30em);
+
+@media (--small-viewport) {
+  /* styles for small viewport */
+}
+
+/* Media ranges */
+@media screen and (width >= 500px) and (width <= 1200px) {
+  .bar {
+    display: block;
+  }
+}
+
+/* Custom Selectors */
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+:--heading { /* styles for all headings */ }
+:--heading + p { /* more styles */ }
+
+/*
+:  to customise a class.
+:: to customise a Pseudo-element.
+*/
+@custom-selector-links :--any-link :link, :visited;
+
+a:--any-link {
+  color: color(rebeccapurple lightness(50%)); /* colors */
+}
+
+.gray {
+  color: gray(100, 50%);
+  /* output: color: rgba(100, 100, 100, 0.5); */
+}
+
+/*font variants */
+h2 {
+  font-variant-caps: small-caps;
+  /* output:
+    font-feature-settings: "c2sc";
+    font-variant-caps: small-caps;
+   */
+}
+
+.blur {
+  filter: blur(4px);
+  /*output:
+    filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="4" /></filter></svg>#filter'); /* Firefox < 35 */
+    filter: blur(4px);
+  */
+}

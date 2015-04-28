@@ -1,15 +1,26 @@
-# PostCSS Starter
+# PostCSS Starter (CSSNext Flavor)
 
-PostCSS Starter provides you various flavors to start using it.
-
-* Modern CSS features
-* SASS-Like Support
-
-## Prerequisites
-* Node
-* gulp
-* git
-
-## Using CSSNext
 * <https://github.com/cssnext/gulp-cssnext>
 * <https://github.com/cssnext/cssnext>
+
+## [Available features](https://github.com/cssnext/cssnext#features)
+
+* [custom properties & `var()`](http://www.w3.org/TR/css-variables/)
+* [reduced `calc()`](https://github.com/MoOx/reduce-css-calc#readme)
+* [custom media queries](http://dev.w3.org/csswg/mediaqueries/#custom-mq)
+* [media queries ranges](http://dev.w3.org/csswg/mediaqueries/#mq-ranges)
+* [custom selectors](http://dev.w3.org/csswg/css-extensions/#custom-selectors)
+* [`color()`](http://dev.w3.org/csswg/css-color/#modifying-colors)
+* [`hwb()`](http://dev.w3.org/csswg/css-color/#the-hwb-notation)
+* [`gray()`](http://dev.w3.org/csswg/css-color/#grays)
+* [#rrggbbaa](http://dev.w3.org/csswg/css-color/#hex-notation)
+* [`rebeccapurple`](http://dev.w3.org/csswg/css-color/#valdef-color-rebeccapurple)
+* [font-variant](http://dev.w3.org/csswg/css-fonts/#propdef-font-variant)
+* [filter](http://www.w3.org/TR/filter-effects/)
+* [`rem` units](http://www.w3.org/TR/css3-values/#rem-unit)
+* [pseudo-elements](http://www.w3.org/TR/css3-selectors/#pseudo-elements)
+* alpha colors for browser that don't understand [css 3 colors](http://www.w3.org/TR/css3-color/)
+
+## TODO
+* Make a more realistic example of the CSS
+* add w3c links to css
