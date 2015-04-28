@@ -24,6 +24,5 @@ To start using CSSNext Package, switch to the [cssnext branch](cssnext-starter/t
 git checkout cssnext
 ```
 
-
 * <https://github.com/cssnext/gulp-cssnext>
 * <https://github.com/cssnext/cssnext>
