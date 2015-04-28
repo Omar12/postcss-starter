@@ -1,15 +1,10 @@
-var postcss = require('gulp-postcss');
 var gulp = require('gulp');
-var autoprefixer = require('autoprefixer-core');
-var mqpacker = require('css-mqpacker');
-var csswring = require('csswring');
+var cssnext = require("gulp-cssnext");
 
-var cssnext = require("gulp-cssnext")
-
-gulp.task("stylesheets", function() {
-  gulp.src("src/stylesheets/index.css")
+gulp.task("css", function() {
+  gulp.src('./src/*.css')
     .pipe(cssnext({
         compress: true
     }))
-    .pipe(gulp.dest("./dist/stylesheets"))
+    .pipe(gulp.dest("./dist"))
 });
