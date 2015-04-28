@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "gulp": "^3.8.11",
     "gulp-cssnext": "^1.0.0"
   }
 }
