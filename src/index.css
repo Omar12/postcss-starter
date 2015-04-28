@@ -84,7 +84,7 @@ h2 {
 .blur {
   filter: blur(4px);
   /*output:
-    filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="4" /></filter></svg>#filter'); /* Firefox < 35 */
+    filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="4" /></filter></svg>#filter');
     filter: blur(4px);
   */
 }
