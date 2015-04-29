@@ -1,7 +1,17 @@
 # PostCSS Starter (CSSNext Flavor)
 
-* <https://github.com/cssnext/gulp-cssnext>
-* <https://github.com/cssnext/cssnext>
+The branch includes includes proposed CSS syntax to be considered for future
+releases of CSS (CSS4). It uses [gulp-cssnext](https://github.com/cssnext/gulp-cssnext)
+to transpile from CSS4 to CSS3. It's core uses [css-next](https://github.com/cssnext/cssnext).
+
+The ideal scenario is that the css file within this branch will work in future browsers
+without the need to be transpiled.
+
+## Build from CSS4 to CSS3
+
+```
+gulp css
+```
 
 ## [Available features](https://github.com/cssnext/cssnext#features)
 
@@ -20,7 +30,3 @@
 * [`rem` units](http://www.w3.org/TR/css3-values/#rem-unit)
 * [pseudo-elements](http://www.w3.org/TR/css3-selectors/#pseudo-elements)
 * alpha colors for browser that don't understand [css 3 colors](http://www.w3.org/TR/css3-color/)
-
-## TODO
-* Make a more realistic example of the CSS
-* add w3c links to css
