@@ -1,57 +1,65 @@
 /* CSS Next
  * <https://github.com/cssnext/cssnext>
  * Available features
- *   - customProperties
- *   - calc
- *   - customMedia
- *   - mediaQueriesRange
- *   - customSelectors
- *   - colorFunction
- *   - colorHexAlpha
- *   - colorHwb
- *   - colorRebeccapurple
- *   - fontVariant
- *   - filter
- *   - rem
- *   - pseudoElements
- *   - colorRgba
- *   - autoprefixer
+ *  [1] customProperties http://www.w3.org/TR/css-variables/
+ *  [2] calc https://github.com/MoOx/reduce-css-calc#readme
+ *  [3] customMedia http://dev.w3.org/csswg/mediaqueries/#custom-mq
+ *  [4] mediaQueriesRange http://dev.w3.org/csswg/mediaqueries/#mq-ranges
+ *  [5] customSelectors http://dev.w3.org/csswg/css-extensions/#custom-selectors
+ *  [6] colorFunction http://dev.w3.org/csswg/css-color/#modifying-colors
+ *  [7] colorHwb http://dev.w3.org/csswg/css-color/#the-hwb-notation
+ *  [8] gray() http://dev.w3.org/csswg/css-color/#grays
+ *  [9] colorRebeccapurple http://dev.w3.org/csswg/css-color/#valdef-color-rebeccapurple
+ *  [10] fontVariant http://dev.w3.org/csswg/css-fonts/#propdef-font-variant
+ *  [11] filter http://www.w3.org/TR/filter-effects/
+ *  [12] pseudoElements http://www.w3.org/TR/css3-selectors/#pseudo-elements
  */
 
- /* customProperties  and calc */
-
- :root {
-  --color: rebeccapurple;
+:root {
+  /* [1] customProperties
+      http://www.w3.org/TR/css-variables/
+   */
+  --color: rebeccapurple; /* [9] http://dev.w3.org/csswg/css-color/#valdef-color-rebeccapurple */
   --main-font-size: 16px;
 }
 
 body {
+  /* [1] */
   font-size: var(--main-font-size);
   color: var(--color);
 }
 
 h1 {
+  /* [2] calc()
+     https://github.com/MoOx/reduce-css-calc#readme
+   */
   font-size: calc(var(--main-font-size) * 2);
   height: calc(100px - 2em);
 }
 
 
-/* Custom Media Queries */
-
+/* [3] customMedia
+   http://dev.w3.org/csswg/mediaqueries/#custom-mq
+ */
 @custom-media --small-viewport (max-width: 30em);
 
 @media (--small-viewport) {
   /* styles for small viewport */
 }
 
-/* Media ranges */
+
+/* [4] mediaQueriesRange
+    http://dev.w3.org/csswg/mediaqueries/#mq-ranges
+ */
 @media screen and (width >= 500px) and (width <= 1200px) {
   .bar {
     display: block;
   }
 }
 
-/* Custom Selectors */
+/* [5] customSelectors
+    http://dev.w3.org/csswg/css-extensions/#custom-selectors
+ */
 @custom-selector :--heading h1, h2, h3, h4, h5, h6;
 
 :--heading { /* styles for all headings */ }
@@ -64,27 +72,44 @@ h1 {
 @custom-selector-links :--any-link :link, :visited;
 
 a:--any-link {
-  color: color(rebeccapurple lightness(50%)); /* colors */
+  color: color(rebeccapurple lightness(50%)); /* [6] */
+}
+
+/* [8] colorHwb
+    http://dev.w3.org/csswg/css-color/#the-hwb-notation
+*/
+.hwb {
+  color: hwb(90, 0%, 0%, 0.5);
 }
 
 .gray {
+  /* [7] gray()
+     http://dev.w3.org/csswg/css-color/#grays
+   */
   color: gray(100, 50%);
-  /* output: color: rgba(100, 100, 100, 0.5); */
 }
 
-/*font variants */
+/* [10] fontVariant
+   http://dev.w3.org/csswg/css-fonts/#propdef-font-variant
+ */
 h2 {
   font-variant-caps: small-caps;
-  /* output:
-    font-feature-settings: "c2sc";
-    font-variant-caps: small-caps;
-   */
 }
 
+/* [11] filter
+    http://www.w3.org/TR/filter-effects/
+ */
 .blur {
   filter: blur(4px);
-  /*output:
-    filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="4" /></filter></svg>#filter');
-    filter: blur(4px);
-  */
+}
+
+/* [12] pseudoElements
+   http://www.w3.org/TR/css3-selectors/#pseudo-elements
+ */
+ p {
+  font-size: 1rem;
+}
+
+p::first-letter {
+  font-size: 2rem;
 }
