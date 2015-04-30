@@ -1,14 +1,9 @@
 # PostCSS Starter
 
-PostCSS Starter provides you various flavors to start using it.
-
-* Modern CSS features (CSS Next)
-* SASS-Like Support
-
-## Prerequisites
-* Node
-* gulp
-* git
+## How To Run
+```
+gulp css
+```
 
 ## Available Modules
 
