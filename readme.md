@@ -2,8 +2,8 @@
 
 PostCSS Starter provides you various flavors to start using it.
 
-* Modern CSS features (CSS Next)
-* SASS-Like Support
+* Modern CSS features ([CSS Next](https://github.com/cssnext/cssnext))
+* PreProcessor Like (Flavored)
 
 ## Prerequisites
 * Node
@@ -24,5 +24,9 @@ To start using CSSNext Package, switch to the [cssnext branch](cssnext-starter/t
 git checkout cssnext
 ```
 
-* <https://github.com/cssnext/gulp-cssnext>
-* <https://github.com/cssnext/cssnext>
+## PreProcessor Flavored
+
+To use PreProcessor (Sass or Less) like features, switch to the [preprocessor-like branch](cssnext-starter/tree/preprocessor-like):
+```
+git checkout preprocessor-like
+```
