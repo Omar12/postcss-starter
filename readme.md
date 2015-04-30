@@ -10,19 +10,11 @@ PostCSS Starter provides you various flavors to start using it.
 * gulp
 * git
 
-## Installation
+## Available Modules
 
-If you want to play with everything, run `npm install` from **master**. This will
-install all the dependencies from all the branches. Subsequently, you can switch
-to the desired branch and run `npm install` and only install what's dependent on
-that branch.
-
-## Modern CSS features (CSSNext)
-
-To start using CSSNext Package, switch to the [cssnext branch](cssnext-starter/tree/cssnext):
-```
-git checkout cssnext
-```
-
-* <https://github.com/cssnext/gulp-cssnext>
-* <https://github.com/cssnext/cssnext>
+* https://github.com/davidtheclark/postcss-simple-extend
+* https://github.com/postcss/postcss-nested
+* https://github.com/postcss/postcss-mixins
+* https://github.com/postcss/postcss-simple-vars
+* https://github.com/antyakushev/postcss-for
+* https://github.com/postcss/postcss-calc
