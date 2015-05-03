@@ -4,7 +4,6 @@
   "private": true,
   "devDependencies": {
     "gulp": "^3.8.11",
-    "gulp-cssnext": "^1.0.0",
     "postcss": "^4.1.7",
     "postcss-simple-extend": "^0.3.1",
     "postcss-nested": "^0.2.2",
