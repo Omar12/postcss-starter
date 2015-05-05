@@ -2,12 +2,12 @@
 
 The branch includes includes proposed CSS syntax to be considered for future
 releases of CSS (CSS4). It uses [gulp-cssnext](https://github.com/cssnext/gulp-cssnext)
-to transpile from CSS4 to CSS3. It's core uses [css-next](https://github.com/cssnext/cssnext).
+to transpile from CSS level 4 to CSS3. It's core uses [cssnext](https://cssnext.github.io/).
 
 The ideal scenario is that the css file within this branch will work in future browsers
 without the need to be transpiled.
 
-## Build from CSS4 to CSS3
+## Build from CSS level 4 to CSS3
 
 ```
 gulp css
