@@ -26,7 +26,7 @@ git checkout cssnext
 
 ## PreProcessor Flavored
 
-To use PreProcessor (Sass or Less) like features, switch to the [preprocessor-like branch](cssnext-starter/tree/preprocessor-like):
+To use PreProcessor (Sass or Less) like features, switch to the [preprocessor-like branch](postcss-starter/tree/preprocessor-like):
 ```
 git checkout preprocessor-like
 ```
