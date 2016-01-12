@@ -19,14 +19,14 @@ that branch.
 
 ## Modern CSS features (CSSNext)
 
-To start using CSSNext Package, switch to the [cssnext branch](cssnext-starter/tree/cssnext):
+To start using CSSNext Package, switch to the [cssnext branch](https://github.com/Omar12/postcss-starter/tree/cssnext):
 ```
 git checkout cssnext
 ```
 
 ## PreProcessor Flavored
 
-To use PreProcessor (Sass or Less) like features, switch to the [preprocessor-like branch](postcss-starter/tree/preprocessor-like):
+To use PreProcessor (Sass or Less) like features, switch to the [preprocessor-like branch](https://github.com/Omar12/postcss-starter/tree/preprocessor-like):
 ```
 git checkout preprocessor-like
 ```
